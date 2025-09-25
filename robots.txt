@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /peerproof/
+
+Sitemap: https://example.com/sitemap.xml

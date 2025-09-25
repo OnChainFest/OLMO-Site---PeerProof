@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>PeerProof — La confianza empieza con referencias verificadas </title>
+  <meta name="description" content="Aumenta tu conversión con testimonios verificados, métricas en vivo y logos de clientes. PeerProof es la capa de confianza para tu SaaS.">
+  <meta name="author" content="PeerProof">
+
+  <!-- Canonical & hreflang (cambia example.com por tu dominio) -->
+  <link rel="canonical" href="https://example.com/es/">
+  <link rel="alternate" href="https://example.com/en/" hreflang="en" />
+  <link rel="alternate" href="https://example.com/es/" hreflang="es" />
+  <link rel="alternate" href="https://example.com/" hreflang="x-default" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/es/">
+  <meta property="og:title" content="PeerProof — Prueba social que convierte visitas en clientes">
+  <meta property="og:description" content="Aumenta tu conversión con testimonios verificados, métricas en vivo y logos de clientes.">
+  <meta property="og:image" content="https://example.com/images/og-peerproof.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PeerProof — Prueba social que convierte visitas en clientes">
+  <meta name="twitter:description" content="Aumenta tu conversión con testimonios verificados, métricas en vivo y logos de clientes.">
+  <meta name="twitter:image" content="https://example.com/images/og-peerproof.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/peerproof-favicon-32-dark.png">
+
+  <!-- PWA / App icon -->
+  <link rel="apple-touch-icon" sizes="512x512" href="../../images/peerproof-mark-512-dark.png">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/flaticon.css" rel="stylesheet">
+  <link href="../../css/menu.css" rel="stylesheet">	
+  <link id="effect" href="../../css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+  <link href="../../css/magnific-popup.css" rel="stylesheet">	
+  <link href="../../css/owl.carousel.min.css" rel="stylesheet">
+  <link href="../../css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="../../css/animate.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet"> 
+  <link href="../../css/responsive.css" rel="stylesheet">
+
+<style>
+  /* Brand overrides */
+  :root{
+    --pp-primary:#3B1E6D; /* indigo */
+    --pp-accent:#19C6C1;  /* teal */
+    --pp-dark:#11131a;
+  }
+  .btn-violet-red,
+  .violet-red-hover:hover,
+  .violet-red-color { background-color: var(--pp-primary)!important; border-color: var(--pp-primary)!important; }
+  .btn-violet-red.tra-violet-red-hover { color:#fff!important; }
+  .btn.btn-tra-black.violet-red-hover:hover { background: var(--pp-primary)!important; border-color: var(--pp-primary)!important; color:#fff!important; }
+  .bg-tra-purple { background: rgba(59,30,109,.07)!important; }
+  .ico-60.shape-ico.violet-red-color { background: rgba(59,30,109,.08)!important; color: var(--pp-primary)!important; }
+  a, .nav-violet-red-hover > li > a:hover { color: var(--pp-primary)!important; }
+  .video-btn.bg-violet-red { background: var(--pp-accent)!important; }
+  .header.navbar-dark.tra-menu.sticky .wsmainfull { border-color: rgba(59,30,109,.1)!important; }
+
+  /* Badge para cambio de idioma en header */
+  .lang-chip {
+    display:inline-flex;
+    gap:.4rem;
+    align-items:center;
+    padding:.25rem .5rem;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:999px;
+    font-size:.85rem;
+    margin-left:1rem; /* separación respecto al botón de la derecha */
+  }
+  .lang-chip a {
+    color:#fff;
+    text-decoration:none;
+  }
+  .lang-chip .sep {
+    opacity:.5;
+  }
+</style>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX'); /* Reemplaza con tu ID GA4 */
+  </script>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="loading" class="violet-red-loading" aria-hidden="true">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div class="object" id="object_one"></div>
+        <div class="object" id="object_two"></div>
+        <div class="object" id="object_three"></div>
+        <div class="object" id="object_four"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page" class="page">
+
+   <!-- HEADER -->
+<header id="header" class="header tra-menu navbar-dark">
+  <div class="header-wrapper">
+
+    <!-- MOBILE HEADER -->
+    <div class="wsmobileheader clearfix">	  	
+      <span class="smllogo">
+        <img src="../../images/peerproof-logo-dark.png" alt="PeerProof" class="logo-img" loading="lazy"/>
+      </span>
+      <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>	
+    </div>
+
+    <!-- NAV -->
+    <div class="wsmainfull menu clearfix">
+      <div class="wsmainwp clearfix">
+
+        <!-- HEADER LOGO (desktop) -->
+        <div class="desktoplogo">
+          <a href="#hero-10" class="logo-black">
+            <img src="../../images/peerproof-logo-dark.png" alt="PeerProof" class="logo-img" loading="lazy">
+          </a>
+        </div>
+
+        <div class="desktoplogo">
+          <a href="#hero-10" class="logo-white">
+            <img src="../../images/peerproof-logo-white.png" alt="PeerProof" class="logo-img" loading="lazy">
+          </a>
+        </div>
+
+        <!-- MENU -->
+        <nav class="wsmenu clearfix">
+          <ul class="wsmenu-list nav-violet-red-hover">
+            <li class="nl-simple" aria-haspopup="true"><a href="#features-4">Características</a></li>
+            <li class="nl-simple" aria-haspopup="true"><a href="#reviews-4">Testimonios</a></li>
+            <li class="nl-simple" aria-haspopup="true"><a href="#faqs-2">FAQs</a></li>
+            <li class="nl-simple" aria-haspopup="true"><a href="#pricing">Precios</a></li>
+
+            <li class="nl-simple" aria-haspopup="true">
+              <a href="#cta-11" class="btn btn-tra-black violet-red-hover last-link" id="cta-header">
+                Empezar gratis
+              </a>
+            </li>
+
+            <li class="nl-simple" aria-haspopup="true">
+              <span class="lang-chip" aria-label="Cambiar idioma">
+                <a href="../en/">EN</a> <span class="sep">/</span> <strong>ES</strong>
+              </span>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+  <!-- HERO -->
+<section id="hero-10" class="bg-scroll rel hero-section division">
+  <div class="container">	
+    <div class="row d-flex align-items-center">
+      <div class="col text-center">
+
+        <!-- HERO TEXT -->
+        <div class="hero-10-txt">
+          <h1 class="h2-md wow fadeInUp">
+            La confianza empieza con referencias verificadas
+          </h1>
+
+          <p class="p-xl wow fadeInUp" data-wow-delay=".05s">
+            PeerProof te permite gestionar, compartir y proteger tus referencias laborales con total transparencia.
+          </p>
+
+          <div class="btns-group wow fadeInUp" data-wow-delay=".1s">
+            <a href="#signup" class="btn btn-violet-red tra-violet-red-hover mr-15" id="cta-hero-primary">Comenzar</a>
+            <a href="#features-4" class="btn btn-tra-black tra-violet-red-hover" id="cta-hero-secondary">Saber más</a>
+          </div>
+        </div>
+
+        <!-- HERO IMAGE / VIDEO -->
+        <div class="hero-10-img video-preview wow fadeInUp" data-wow-delay=".15s">
+          <a class="video-popup1" href="https://www.youtube.com/embed/SZEflIVnhH8" aria-label="Reproducir video demo">
+            <div class="video-btn video-btn-xl bg-violet-red ico-90">
+              <div class="video-block-wrapper"><span class="flaticon-play-button" aria-hidden="true"></span></div>
+            </div>
+          </a>
+
+          <img class="img-fluid" src="../../images/dashboard-07.png"
+               alt="Vista previa del panel de PeerProof"
+               width="980" height="540" loading="lazy">
+        </div>
+
+      </div>
+    </div> 	
+  </div> 	
+</section>
+
+
+    <!-- POR QUÉ -->
+    <section id="features-8" class="wide-60 features-section division">
+      <div class="container">
+        <div class="row justify-content-center">	
+          <div class="col-lg-10 col-xl-8">
+            <div class="section-title title-01 mb-70">		
+              <h2 class="h2-md">Por qué los equipos eligen PeerProof</h2>
+              <p class="p-xl">Se implementa rápido, se mantiene fácil y demuestra resultados con prueba social auténtica.</p>
+            </div>
+          </div>
+        </div>
+        <div class="fbox-8-wrapper text-center">
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col"><div class="fbox-8 mb-40 wow fadeInUp">
+              <div class="fbox-img bg-whitesmoke-gradient"><img class="img-fluid" src="../../images/img-21.png" alt="Bloques sin código" width="280" height="200" loading="lazy"></div>
+              <h5 class="h5-md">Bloques no-code</h5>
+              <p class="p-lg">Widgets de testimonios, contadores y carruseles. Pega una vez, edita desde el panel.</p>
+            </div></div>
+            <div class="col"><div class="fbox-8 mb-40 wow fadeInUp">
+              <div class="fbox-img bg-whitesmoke-gradient"><img class="img-fluid" src="../../images/img-22.png" alt="Flexible" width="280" height="200" loading="lazy"></div>
+              <h5 class="h5-md">Flexible y en tu marca</h5>
+              <p class="p-lg">Ajusta tipografías, colores, estilos de tarjeta y disposición en minutos.</p>
+            </div></div>
+            <div class="col"><div class="fbox-8 mb-40 wow fadeInUp">
+              <div class="fbox-img bg-whitesmoke-gradient"><img class="img-fluid" src="../../images/img-24.png" alt="Confianza en tiempo real" width="280" height="200" loading="lazy"></div>
+              <h5 class="h5-md">Confianza en tiempo real</h5>
+              <p class="p-lg">Muestra instalaciones, compras y reseñas en vivo para reducir fricción.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="content-7" class="content-7 wide-60 content-section division">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 order-last order-md-2">
+            <div class="txt-block left-column wow fadeInLeft">
+              <div class="txt-box mb-25">
+                <h5 class="h5-lg">Agrega PeerProof en 3 pasos</h5>
+                <ul class="simple-list">
+                  <li class="list-item"><p class="p-lg"><strong>Conecta</strong> tu app o importa testimonios (CSV, G2, Capterra, Google Reviews).</p></li>
+                  <li class="list-item"><p class="p-lg"><strong>Personaliza</strong> widgets: diseño, tema y badges.</p></li>
+                  <li class="list-item"><p class="p-lg"><strong>Publica</strong> en tu landing y páginas de producto. Sin despliegue.</p></li>
+                </ul>
+              </div>
+              <div class="txt-box">
+                <h5 class="h5-lg">Funciona con cualquier stack</h5>
+                <p class="p-lg">Embed de copiar/pegar, componente React o bloque para Webflow/Shopify. Con analíticas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 order-first order-md-2">
+            <div class="content-7-img wow fadeInRight">
+              <img class="img-fluid" src="../../images/dashboard-05.png" alt="Integración de widgets PeerProof"
+                   width="980" height="540" loading="lazy">
+            </div>	
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section id="features-4" class="pb-60 features-section division">
+      <div class="container">
+        <div class="row justify-content-center">	
+          <div class="col-lg-10 col-xl-8">
+            <div class="section-title title-01 mb-70">		
+              <h2 class="h2-md">Simple de usar, fácil de amar</h2>
+              <p class="p-xl">De lanzamiento a escala, PeerProof te da la prueba social que convierte más — con menos tiempo de ingeniería.</p>
+            </div>
+          </div>
+        </div>
+        <div class="fbox-4-wrapper fbox-4-wide">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col"><div class="fbox-4 pr-25 mb-40 wow fadeInUp">
+              <div class="fbox-ico"><div class="ico-60 shape-ico violet-red-color">
+                <img class="ico-bkg" src="../../images/ico-bkg.png" alt="" loading="lazy"><span class="flaticon-dashboard" aria-hidden="true"></span></div></div>
+              <div class="fbox-txt"><h5 class="h5-md">Carruseles de testimonios</h5>
+                <p class="p-lg">Curación por segmento, idioma y producto. Auto-refresh con nuevas reseñas.</p>
+              </div>
+            </div></div>
+
+            <div class="col"><div class="fbox-4 pl-25 mb-40 wow FadeInUp">
+              <div class="fbox-ico"><div class="ico-60 shape-ico violet-red-color">
+                <img class="ico-bkg" src="../../images/ico-bkg.png" alt="" loading="lazy"><span class="flaticon-tool" aria-hidden="true"></span></div></div>
+              <div class="fbox-txt"><h5 class="h5-md">Contadores en vivo</h5>
+                <p class="p-lg">Muestra instalaciones, sesiones, compras o NPS — en tiempo real y con anti-spam.</p>
+              </div>
+            </div></div>
+
+            <div class="col"><div class="fbox-4 pr-25 mb-40 wow fadeInUp">
+              <div class="fbox-ico"><div class="ico-60 shape-ico violet-red-color">
+                <img class="ico-bkg" src="../../images/ico-bkg.png" alt="" loading="lazy"><span class="flaticon-increase-1" aria-hidden="true"></span></div></div>
+              <div class="fbox-txt"><h5 class="h5-md">Muros de logos</h5>
+                <p class="p-lg">Gana autoridad con logos de clientes — auto-orden por región/industria.</p>
+              </div>
+            </div></div>
+
+            <div class="col"><div class="fbox-4 pl-25 mb-40 wow fadeInUp">
+              <div class="fbox-ico"><div class="ico-60 shape-ico violet-red-color">
+                <img class="ico-bkg" src="../../images/ico-bkg.png" alt="" loading="lazy"><span class="flaticon-layers" aria-hidden="true"></span></div></div>
+              <div class="fbox-txt"><h5 class="h5-md">Experimentos A/B</h5>
+                <p class="p-lg">Prueba variantes y atribuye el lift a cada ubicación de widget.</p>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- TESTIMONIOS -->
+    <section id="reviews-4" class="rel pt-100 reviews-section division">
+      <div class="container">
+        <div class="row justify-content-center">	
+          <div class="col-lg-10 col-xl-8">
+            <div class="section-title title-01 mb-60">		
+              <h2 class="h2-md">Historias de nuestros clientes</h2>
+              <p class="p-xl">Lo que los equipos consiguen tras agregar PeerProof a sus páginas clave.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-4-holder">
+        <div class="container"><div class="row"><div class="col-md-12">
+          <div class="owl-carousel owl-theme reviews-4-wrapper">
+            <div class="review-4"><div class="review-4-txt">
+              <p class="p-lg">“Con PeerProof lanzamos prueba social en un día. Los registros crecieron 18% MoM.”</p>
+              <div class="author-data clearfix">
+                <div class="review-avatar"><img src="../../images/review-author-1.jpg" alt="avatar reseña" loading="lazy"></div>
+                <div class="review-author"><h6 class="h6-xl">Scott Boxer</h6><p class="p-md">Head of Growth</p></div>
+              </div>
+            </div></div>
+
+            <div class="review-4"><div class="review-4-txt">
+              <p class="p-lg">“Los contadores en vivo reducen dudas. El checkout subió 12%.”</p>
+              <div class="author-data clearfix">
+                <div class="review-avatar"><img src="../../images/review-author-2.jpg" alt="avatar reseña" loading="lazy"></div>
+                <div class="review-author"><h6 class="h6-xl">Leslie D.</h6><p class="p-md">E-commerce Lead</p></div>
+              </div>
+            </div></div>
+
+            <div class="review-4"><div class="review-4-txt">
+              <p class="p-lg">“Muros de logos y carruseles, totalmente on-brand. Por fin lucimos la confianza que tenemos.”</p>
+              <div class="author-data clearfix">
+                <div class="review-avatar"><img src="../../images/review-author-3.jpg" alt="avatar reseña" loading="lazy"></div>
+                <div class="review-author"><h6 class="h6-xl">Marisol R.</h6><p class="p-md">Directora de Marketing</p></div>
+              </div>
+            </div></div>
+          </div>
+        </div></div></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta-11" class="bg-snow cta-section division">
+      <div class="container">
+        <div class="bg-tra-purple cta-11-wrapper">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-7">
+              <div class="cta-11-txt">
+                <h2 class="h2-xs">¿Listo para unirte a PeerProof?</h2>
+                <p class="p-lg">Añade prueba social a tu embudo en minutos — sin rediseño.</p>
+                <a href="#pricing" class="btn btn-violet-red tra-violet-red-hover" id="cta-cta11">Comienza ahora</a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="text-end">
+                <div class="cta-11-img text-center">
+                  <img class="img-fluid" src="../../images/img-25.png" alt="Widgets en el panel"
+                       width="720" height="420" loading="lazy">
+                </div>	
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>	
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="pricing" class="wide-60 content-section division">
+      <div class="container">
+        <div class="row justify-content-center"><div class="col-lg-8">
+          <div class="section-title title-01 mb-40 text-center">		
+            <h2 class="h2-md">Precios</h2>
+            <p class="p-xl">Empieza gratis. Mejora cuando lo necesites.</p>
+          </div>
+        </div></div>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4"><div class="statistic-block wow fadeInUp">
+            <h3 class="h3-xs">Gratis</h3>
+            <p class="p-lg">Widgets básicos • 1 sitio • Soporte comunitario</p>
+          </div></div>
+          <div class="col mb-4"><div class="statistic-block wow fadeInUp">
+            <h3 class="h3-xs">Pro</h3>
+            <p class="p-lg">Tests A/B • Temas custom • Soporte prioritario</p>
+          </div></div>
+          <div class="col mb-4"><div class="statistic-block wow FadeInUp">
+            <h3 class="h3-xs">Scale</h3>
+            <p class="p-lg">SAML SSO • SLA • Analíticas avanzadas</p>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter-2" class="pt-60 pb-60 newsletter-section division">
+      <div class="container">
+        <div class="row d-flex align-items-center row-cols-1 row-cols-lg-2">
+          <div class="col"><div class="newsletter-txt pr-20">	
+            <h3 class="h3-xs">Mantente al día</h3>
+            <p class="p-lg">Actualizaciones del producto, casos de estudio y tácticas de conversión — dos veces al mes.</p>
+          </div></div>
+          <div class="col">
+            <form class="newsletter-form" action="https://formspree.io/f/XXXXXX" method="POST">
+              <div class="input-group">
+                <input type="email" name="email" class="form-control" placeholder="Tu correo electrónico" required id="s-email">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-violet-red black-hover" id="cta-newsletter">Suscribirme</button>
+                </span>
+              </div>
+              <label for="s-email" class="form-notification"></label>
+            </form>
+          </div>
+        </div>
+      </div>	
+    </section>
+
+    <hr class="divider">
+
+    <!-- FOOTER -->
+    <footer id="footer-4" class="footer division">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3"><div class="footer-info mb-40">
+            <img class="footer-logo" src="../../images/logo-01.png" alt="PeerProof" width="148" height="34" loading="lazy">
+          </div></div>
+
+          <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2 offset-xl-1"><div class="footer-links mb-40">
+            <h6 class="h6-xl">Producto</h6>
+            <ul class="foo-links text-secondary clearfix">
+              <li><p class="p-md"><a href="#features-4">Características</a></p></li>
+              <li><p class="p-md"><a href="#pricing">Precios</a></p></li>
+              <li><p class="p-md"><a href="#reviews-4">Testimonios</a></p></li>
+            </ul>
+          </div></div>
+
+          <div class="col-sm-6 col-md-3 col-lg-2"><div class="footer-links mb-40">
+            <h6 class="h6-xl">Compañía</h6>
+            <ul class="foo-links text-secondary clearfix">
+              <li><p class="p-md"><a href="../en/">View in English</a></p></li>
+              <li><p class="p-md"><a href="#">Empleos</a></p></li>
+              <li><p class="p-md"><a href="#">Contacto</a></p></li>
+            </ul>
+          </div></div>
+
+          <div class="col-sm-6 col-md-3 col-lg-2"><div class="footer-links mb-40">
+            <h6 class="h6-xl">Recursos</h6>
+            <ul class="foo-links text-secondary clearfix">
+              <li><p class="p-md"><a href="#">Blog</a></p></li>
+              <li><p class="p-md"><a href="#">Docs</a></p></li>
+              <li><p class="p-md"><a href="#">Soporte</a></p></li>
+            </ul>
+          </div></div>
+
+          <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2"><div class="footer-links mb-40">
+            <h6 class="h6-xl">Síguenos</h6>
+            <ul class="footer-socials text-secondary ico-25 text-center clearfix">		
+              <li><a href="#"><span class="flaticon-twitter"></span></a></li>
+              <li><a href="#"><span class="flaticon-github"></span></a></li>
+              <li><a href="#"><span class="flaticon-youtube"></span></a></li>
+            </ul>
+          </div></div>
+        </div>
+
+        <hr>
+
+        <div class="bottom-footer">
+          <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
+            <div class="col"><div class="footer-copyright">
+              <p>© 2025 PeerProof. Todos los derechos reservados.</p>
+            </div></div>
+            <div class="col">
+              <ul class="bottom-footer-list text-secondary text-end">
+                <li class="first-li"><p><a href="#">Política de privacidad</a></p></li>
+                <li class="last-li"><p><a href="#">Términos y condiciones</a></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div><!-- /page -->
+
+  <!-- JS -->
+  <script src="../../js/jquery-3.6.0.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>	
+  <script src="../../js/modernizr.custom.js"></script>
+  <script src="../../js/jquery.easing.js"></script>
+  <script src="../../js/jquery.appear.js"></script>
+  <script src="../../js/jquery.scrollto.js"></script>	
+  <script src="../../js/menu.js"></script>
+  <script src="../../js/imagesloaded.pkgd.min.js"></script>
+  <script src="../../js/isotope.pkgd.min.js"></script>
+  <script src="../../js/owl.carousel.min.js"></script>
+  <script src="../../js/jquery.magnific-popup.min.js"></script>
+  <script src="../../js/quick-form.js"></script>	
+  <script src="../../js/request-form.js"></script>	
+  <script src="../../js/jquery.validate.min.js"></script>
+  <script src="../../js/jquery.ajaxchimp.min.js"></script>	
+  <script src="../../js/wow.js"></script>
+  <script src="../../js/custom.js"></script>
+
+  <!-- Eventos GA4 -->
+  <script>
+    const fire = (name, params={}) => { try { gtag('event', name, params); } catch(e){} }
+    document.getElementById('cta-header')?.addEventListener('click', () => fire('cta_click', {place:'header'}));
+    document.getElementById('cta-hero-primary')?.addEventListener('click', () => fire('cta_click', {place:'hero_primary'}));
+    document.getElementById('cta-hero-secondary')?.addEventListener('click', () => fire('cta_click', {place:'hero_secondary'}));
+    document.getElementById('cta-cta11')?.addEventListener('click', () => fire('cta_click', {place:'cta11'}));
+    document.getElementById('cta-newsletter')?.addEventListener('click', () => fire('newsletter_submit', {place:'footer'}));
+  </script>
+</body>
+</html>
